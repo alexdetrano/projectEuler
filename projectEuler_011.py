@@ -1,7 +1,5 @@
 #!/usr/bin/python
 import numpy as np
-import csv
-
 
 def is_max(n, max):
     if n > max:
