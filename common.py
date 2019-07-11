@@ -74,6 +74,13 @@ def get_triangle_numbers():
        sum += i
        yield(sum)
 
+def sum_digits(n):
+    """
+    Add together digits of a number
+    """
+    return sum([int(x) for x in str(n)])
+
+
 
 
         
