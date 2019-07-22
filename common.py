@@ -80,6 +80,30 @@ def sum_digits(n):
     """
     return sum([int(x) for x in str(n)])
 
+def get_divisors(n):
+    if n == 1:
+        return [1]
+    elif is_prime(n):
+        return [1,n]
+    else:
+        max = n // 2
+        d = []
+        i = 1
+        r = 0
+        q = n
+        while i <= max:
+            while r == 0:
+                divisors.append(q,i)
+                n /= i
+                q,r = divmod(n,i)
+
+def get_fibonacci():
+    '''Generate fibonacci numbers'''
+    a = 0
+    b = 1
+    while True:
+        a,b = b,a+b
+        yield a
 
 
 
